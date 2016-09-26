@@ -17,8 +17,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/button_hitit"
-        android:elevation="0dp" />
+        android:id="@+id/button_hitit" />
 
     <TextView
         android:layout_width="match_parent"
@@ -27,5 +26,6 @@
         android:layout_above="@+id/button_hitit"
         android:layout_marginBottom="106dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:id="@+id/textarea" />
 </RelativeLayout>
