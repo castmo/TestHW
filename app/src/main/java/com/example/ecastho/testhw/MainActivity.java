@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         TimeSetter timeSet = new TimeSetter();
         timeSet.show(fm, "fragment_time_setter");
 
+        // test
         return new Date();
     }
 
