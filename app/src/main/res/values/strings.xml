@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">TestHW</string>
+    <string name="title_activity_set_time">setTime</string>
+
+
+    <string name="TimeSetterTitleText">Ange avgång</string>
+    <string name="TimeSetterNowText">Nu</string>
+    <string name="TimeSetterOkText">Ok</string>
+    <string name="TimeSetterCancelText">Avbryt</string>
+
 </resources>
