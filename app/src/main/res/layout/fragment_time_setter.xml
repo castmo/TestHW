@@ -1,43 +1,47 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.ecastho.testhw.TimeSetter">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
-    <!-- TODO: Update blank fragment layout -->
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/TimeSetterTitleText"
-            android:id="@+id/titleText" />
-
         <TimePicker
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/timePicker"
             android:timePickerMode="spinner" />
-
-        <DatePicker
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff" />
+        <TextView
+            android:text="@string/TimeSetterDayTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/datePicker"
-            android:splitMotionEvents="false"
-            android:animateLayoutChanges="false"
-            android:calendarViewShown="false"
-            android:datePickerMode="spinner"
-            android:isScrollContainer="false"
-            android:keepScreenOn="false" />
+            android:id="@+id/textView"
+            android:paddingBottom="@dimen/fab_margin"
+            android:textAlignment="center"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff" />
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.example.ecastho.testhw.timesetter.CustomDayPicker"
+            android:id="@+id/dayPicker"
+            tools:layout="@layout/fragment_custom_day_picker" />
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <Button
                 android:text="@string/TimeSetterNowText"

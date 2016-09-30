@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.ecastho.testhw.timesetter.TimeSetter;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
@@ -63,6 +64,7 @@ public class MainActivity
 
         try {
             date = sdf.parse("2016-08-22T22:11:23");
+            date = new Date();
         } catch (Exception e) {
             e.printStackTrace();
         }

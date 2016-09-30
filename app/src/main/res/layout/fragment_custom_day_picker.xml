@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.ecastho.testhw.timesetter.CustomDayPicker">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+
+        <ImageButton
+            android:layout_height="match_parent"
+            android:id="@+id/buttonPre"
+            app:srcCompat="@android:drawable/arrow_down_float"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/editTextCurrentDate"
+            android:gravity="center_horizontal" />
+<!--        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/editTextCurrentDate"
+            android:gravity="center_vertical|center_horizontal" />
+-->
+        <ImageButton
+            android:text="Button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:drawable/arrow_up_float"
+            android:id="@+id/buttonNext" />
+    </LinearLayout>
+
+</FrameLayout>
