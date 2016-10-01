@@ -83,10 +83,7 @@ public class MainActivity
 
     @Override
     public void OnTimeSetterFinished(Date date) {
-        if (date == null)
-        {}
-        else
-        {}
+        textArea.setText(date.toString());
     }
 
     /**
